@@ -14,66 +14,87 @@
 <body>
     <h1>Hello world!</h1>
     <hr>
-
-    <h2>I'm ready to learn HTML</h2>
-    <p>HTML Full Course for Beginers by Dave Gray</p>
-
-    <h3>My daily schelude</h3>
-    <p>HTML Full Course <em>for Beginers by Dave Gray.</em><br/>
-        Rozszyfrujmy skrót <abbr title="Mozilla Developer Network">MDN</abbr><br/><br/>
-
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolor ullam, neque quia minima ducimus est ratione id error laborum asperiores aut dolores iste sequi. Harum quia non aliquid mollitia!
-
-    </p>
-    <hr>
-    <h2>Planowanie wakacji</h2>
-    <p>Lubię <abbr title="Kansas">KS</abbr> i odwiedzę plażę </p>
-
-    <h3>Kolejny plan na dziś</h3>
-    <p>&nbsp;&nbsp;&nbsp; HTML Full Course <strong>for Beginers </strong>by Dave Gray.<br/>
-        &lt;&lt;&lt; Kolejna linijka tekstu<br/>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolor ullam, neque quia minima ducimus est ratione id error laborum asperiores aut dolores iste sequi. Harum quia non aliquid mollitia!
-        
-    </p>
-    <h3>Kolejny nagłówek H3. Tym razem będzie listing. Są trzy typy list. </h3>
+    <nav>
         <ul>
-            <li>Pierwszy</li>
-            <li>Drugi</li>
-            <li><p>Adres w listingu:</p>
-                <address>
-                    Margaritaville Island Reserve Riviera Cancun<br>
-                    Bahia Petempich<br>
-                    Mexico<br>
-                    Colonia Morelos, Mexico 77580
-                </address>
+            <li>
+                <a href="index.html#html" title="">Learn Html</a>
             </li>
-        </ul> 
-        <ol>
-            <li>Pierwszy</li>
-            <li>Drugi</li>
-            <li>Trzeci</li>
-        </ol>      
-        <dl>
-            <dt>Description List. Pierwszy</dt>
-            <dd>Drugi</dd>
-            <dd>Trzeci</dd>
+            <li>
+                <a href="index.html#vacation" title="">Vacation</a>
+            </li>
+            <li>
+                <a href="about.html" title="">About Dave</a>
+            </li>
+        </ul>
+    </nav>
 
-            <dt>South Pole</dt>
-            <dd>This is also cold</dd>
-            
-            <dt>Mountain Tops</dt>
-            <dd>These are olso cold</dd>
-        </dl>    
-
-    <p>Adres:</p>
-    <address>
-        Margaritaville Island Reserve Riviera Cancun<br>
-        Bahia Petempich<br>
-        Mexico<br>
-        Colonia Morelos, Mexico 77580
-    </address>
-    <!-- jakis komentarz -->
     <hr>
-    <p>&copy; Dave Gray. &gt;&gt;&gt;</p>
+    <section id="html">
+        <h2>I'm ready to learn HTML</h2>
+        <p>HTML Full Course for Beginers by Dave Gray</p>
+
+        <h3>My daily schelude</h3>
+        <p>HTML Full Course <em>for Beginers by Dave Gray.</em><br/>
+            Rozszyfrujmy skrót <abbr title="Mozilla Developer Network">
+                <a href="https://developer.mozilla.org" title="Mozilla Developer Network">MDN</a></abbr><br/><br/>
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolor ullam, neque quia minima ducimus est ratione id error laborum asperiores aut dolores iste sequi. Harum quia non aliquid mollitia!
+
+        </p>
+    </section>
+    <hr>
+    <section id="vacation">
+        <h2>Planowanie wakacji</h2>
+        <p>Lubię <abbr title="Kansas">KS</abbr> i odwiedzę plażę </p>
+
+        <h3>Kolejny plan na dziś</h3>
+        <p>&nbsp;&nbsp;&nbsp; HTML Full Course <strong>for Beginers </strong>by Dave Gray.<br/>
+            &lt;&lt;&lt; Kolejna linijka tekstu<br/>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolor ullam, neque quia minima ducimus est ratione id error laborum asperiores aut dolores iste sequi. Harum quia non aliquid mollitia!
+            
+        </p>
+        <h3>Kolejny nagłówek H3. Tym razem będzie listing. Są trzy typy list. </h3>
+            <ul>
+                <li>Pierwszy</li>
+                <li>Drugi</li>
+                <li><p>Adres w listingu:</p>
+                    <address>
+                        Margaritaville Island Reserve Riviera Cancun<br>
+                        Bahia Petempich<br>
+                        Mexico<br>
+                        Colonia Morelos, Mexico 77580
+                    </address>
+                </li>
+            </ul> 
+            <ol>
+                <li>Pierwszy</li>
+                <li>Drugi</li>
+                <li>Trzeci</li>
+            </ol>      
+            <dl>
+                <dt>Description List. Pierwszy</dt>
+                <dd>Drugi</dd>
+                <dd>Trzeci</dd>
+
+                <dt>South Pole</dt>
+                <dd>This is also cold</dd>
+
+                <dt>Mountain Tops</dt>
+                <dd>These are olso cold</dd>
+            </dl>    
+
+        <p>Adres:</p>
+        <address>
+            Margaritaville Island Reserve Riviera Cancun<br>
+            Bahia Petempich<br>
+            Mexico<br>
+            Colonia Morelos, Mexico 77580
+        </address>
+        <!-- jakis komentarz -->
+    </section>
+
+    <hr>
+    <p>&copy; <a href="about.html" title="About Dave">Dave Gray</a> &gt;&gt;&gt;</p>
+    <p><a href="#">Back to top</a></p>
 </body>
 </html>
