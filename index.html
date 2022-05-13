@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Wojtek Kibitlewski">
@@ -12,94 +12,188 @@
 
 </head>
 <body>
-    <h1>Hello world!</h1>
-    <hr>
-    <nav>
-        <ul>
-            <li>
-                <a href="index.html#html" title="">Learn Html</a>
-            </li>
-            <li>
-                <a href="index.html#vacation" title="">Vacation</a>
-            </li>
-            <li>
-                <a href="about.html" title="">About Dave</a>
-            </li>
-        </ul>
-    </nav>
-
-    <hr>
-    <section id="html">
-        <h2>I'm ready to learn HTML</h2>
-        <p>HTML Full Course for Beginers by Dave Gray</p>
-
-        <h3>My daily schelude</h3>
-        <p>HTML Full Course <em>for Beginers by Dave Gray.</em><br/>
-            Rozszyfrujmy skrót <abbr title="Mozilla Developer Network">
-                <a href="https://developer.mozilla.org" title="Mozilla Developer Network">MDN</a></abbr><br/><br/>
-
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolor ullam, neque quia minima ducimus est ratione id error laborum asperiores aut dolores iste sequi. Harum quia non aliquid mollitia!
-
-        </p>
-    </section>
-    <hr>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <section id="vacation">
-        <h2>Planowanie wakacji</h2>
-        <p>Lubię <abbr title="Kansas">KS</abbr> i odwiedzę plażę </p>
-        <img src="img/vacation.jpg" alt="Wakacje na Karaibach" title="Zamierzam pojechać na Karaiby" width="600" loading="lazy">
-
-        <h3>Kolejny plan na dziś</h3>
-        <p>&nbsp;&nbsp;&nbsp; HTML Full Course <strong>for Beginers </strong>by Dave Gray.<br/>
-            &lt;&lt;&lt; Kolejna linijka tekstu<br/>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolor ullam, neque quia minima ducimus est ratione id error laborum asperiores aut dolores iste sequi. Harum quia non aliquid mollitia!
-            
-        </p>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <h3>Kolejny nagłówek H3. Tym razem będzie listing. Są trzy typy list. </h3>
+    <header>
+        <h1>Hello world!</h1>
+        
+        <nav aria-label="primary-navigation">
+            <h2>Primary navigation</h2>
             <ul>
-                <li>Pierwszy</li>
-                <li>Drugi</li>
-                <li><p>Adres w listingu:</p>
+                <li>
+                    <a href="index.html#html" title="">Learn Html</a>
+                </li>
+                <li>
+                    <a href="index.html#vacation" title="">Vacation</a>
+                </li>
+                <li>
+                    <a href="about.html" title="">About Dave</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <hr>
+        <article id="html">
+            <h2>I'm ready to learn HTML</h2>
+            <p>HTML Full Course for Beginers by Dave Gray</p>
+    
+            <h3>My daily schelude</h3>
+            <p>HTML Full Course <em>for Beginers by Dave Gray.</em><br/>
+                Rozszyfrujmy skrót <abbr title="Mozilla Developer Network">
+                    <a href="https://developer.mozilla.org" title="Mozilla Developer Network">MDN</a></abbr><br/><br/>
+    
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolor ullam, neque quia minima ducimus est ratione id error laborum asperiores aut dolores iste sequi. Harum quia non aliquid mollitia!
+    
+            </p>
+
+        </article>
+        <hr>
+        <article id="vacation">
+            <h2>Planowanie wakacji</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod totam impedit quia tempora modi accusantium sit, aliquam fuga molestias sapiente. Quae quos veniam voluptas eligendi necessitatibus praesentium suscipit dolores eos.
+
+            </p>    
+            <section>
+                <h3>Tytuł tej sekcji</h3>
+                    <figure>
+                        <figcaption>An example of HTML code</figcaption>
+                        <p>
+                            <code>
+                                &lt;h1&gt;Hello World!&lt;/h1&gt;
+                            </code>
+                        </p>
+                    </figure>
+                    <p>Lubię <abbr title="Kansas">KS</abbr> i odwiedzę plażę </p>
+                    <figure>
+                        <img src="img/vacation.jpg" alt="Karaiby" title="Zamierzam pojechać na Karaiby" width="600" loading="lazy">
+                        <figcaption>
+                            Wakacje na Karaibach
+                        </figcaption>
+                    </figure>
+                </section>
+            
+                <section>
+                    <h3>Kolejny plan na dziś</h3>
+                        <p>&nbsp;&nbsp;&nbsp; HTML Full Course <strong>for Beginers </strong>by Dave Gray.<br/>
+                            &lt;&lt;&lt; Kolejna linijka tekstu<br/>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolor ullam, neque quia minima ducimus est ratione id error laborum asperiores aut dolores iste sequi. Harum quia non aliquid mollitia!
+                            
+                        </p>
+                        <h3>Kolejny nagłówek H3. Tym razem będzie listing. Są trzy typy list. </h3>
+                        <ul>
+                            <li>Pierwszy</li>
+                            <li>Drugi</li>
+                            <li><p>Adres w listingu:</p>
+                                <address>
+                                    Margaritaville Island Reserve Riviera Cancun<br>
+                                    Bahia Petempich<br>
+                                    Mexico<br>
+                                    Colonia Morelos, Mexico 77580
+                                </address>
+                                <figure>
+                                <img src="img/caribbean.jpg" alt="Carabbean" title="I want to visit a Caribbean beach also." loading="lazy">
+                                    <figcaption>
+                                        Carabbean map
+                                    </figcaption>
+                                </figure>
+                                
+                            </li>
+                        </ul> 
+                        <ol>
+                            <li>Pierwszy</li>
+                            <li>Drugi</li>
+                            <li>Trzeci</li>
+                        </ol>      
+                        <dl>
+                            <dt>Description List. Pierwszy</dt>
+                            <dd>Drugi</dd>
+                            <dd>Trzeci</dd>
+            
+                            <dt>South Pole</dt>
+                            <dd>This is also cold</dd>
+            
+                            <dt>Mountain Tops</dt>
+                            <dd>These are olso cold</dd>
+                        </dl>    
+            
+                    <p>Adres:</p>
                     <address>
                         Margaritaville Island Reserve Riviera Cancun<br>
                         Bahia Petempich<br>
                         Mexico<br>
                         Colonia Morelos, Mexico 77580
                     </address>
-                    <img src="img/caribbean.jpg" alt="Carabbean map" title="I want to visit a Caribbean beach also." loading="lazy">
+                    <br>
+                    <table>
+                        <caption>Rozkład mojego dnia</caption>
+                        <thead>
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th scope="col">Czas</th>
+                                <th scope="col">Aktywność</th>
+                            </tr>
+                        </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">rano</th>
+                                <td>
+                                    <time datetime="09:00">9am</time>-<time datetime="13:00">1pm</time>
+                                </td>
+                                <td>Pisanie kodu</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">popołudnie</th>
+                                <td>
+                                    <time datetime="13:00">1pm</time>-<time datetime="14:00">2pm</time>
+                                </td>
+                                <td>Jedzenie obiadu</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">wieczór</th>
+                                <td>
+                                    <time datetime="21:00">9pm</time>-<time datetime="00:00">12pm</time>
+                                </td>
+                                <td>Pisanie kodu</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="2" scope="row">noc</th>
+                                <td rowspan="2">Pozostały czas</td>
+                                <td>Czas wolny</td>
+                            </tr>
+                            <tr>
+                                <td >Sen</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">Przez ostatnie dwa tygodnie</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <br><br><br>
+                    <aside>
+                        <details>
+                            <summary>
+                                Jak często, ile <mark>godzin dziennie </mark> piszę kod
+                            </summary>
+                            <p>Zaczynam o godz. <time datetime="09:00">9:00</time> i piszę kod około <time datetime="PT4H">4</time> godziny. 
+                                Staram się również coś napisać po godz. 20:00, kiedy dzieci już idą spać.</p>
+                        </details>
+                    </aside>
 
-                </li>
-            </ul> 
-            <ol>
-                <li>Pierwszy</li>
-                <li>Drugi</li>
-                <li>Trzeci</li>
-            </ol>      
-            <dl>
-                <dt>Description List. Pierwszy</dt>
-                <dd>Drugi</dd>
-                <dd>Trzeci</dd>
+                </section>
+            <!-- jakis komentarz -->
+        </article>
 
-                <dt>South Pole</dt>
-                <dd>This is also cold</dd>
+    </main>
+    
+    <footer>
+        <hr>
+        <p>&copy; <a href="about.html" title="About Dave">Dave Gray</a> &gt;&gt;&gt;</p>
 
-                <dt>Mountain Tops</dt>
-                <dd>These are olso cold</dd>
-            </dl>    
-
-        <p>Adres:</p>
-        <address>
-            Margaritaville Island Reserve Riviera Cancun<br>
-            Bahia Petempich<br>
-            Mexico<br>
-            Colonia Morelos, Mexico 77580
-        </address>
-        <!-- jakis komentarz -->
-    </section>
-
-    <hr>
-    <p>&copy; <a href="about.html" title="About Dave">Dave Gray</a> &gt;&gt;&gt;</p>
-    <p><a href="#">Back to top</a></p>
+        <p><a href="#">Back to top</a></p>
+    </footer>
+    
 </body>
 </html>
