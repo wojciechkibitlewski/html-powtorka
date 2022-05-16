@@ -27,6 +27,9 @@
                 <li>
                     <a href="about.html" title="">About Dave</a>
                 </li>
+                <li>
+                    <a href="index.html#contact" title="">Contact</a>
+                </li>
             </ul>
         </nav>
 
@@ -184,10 +187,119 @@
 
                 </section>
             <!-- jakis komentarz -->
-        </article>
 
+        </article>
+        <hr>
+
+        <article id="contact">
+            <h2>Kontakt ze mną</h2>
+            <p>Będzie mi bardzo miło przeczytać coś od Ciebie :)</p>
+            
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Personal info</legend>
+                <p>
+                    <label for="firstName">First Name:</label>
+                    <input id="firstName" type="text" name="firstName" placeholder="Twoje imię" autocomplete="on" required autofocus>
+                </p>
+                <p>
+                    <label for="lastName">Last Name</label>
+                    <input id="lastName" type="text" name="lastName" placeholder="Twoje nazwisko" autocomplete="on" required>
+                </p>
+                <p>
+                    <label for="password">Hasło</label>
+                    <input id="password" type="password" name="password" autocomplete="on" required>
+                </p>
+                <p>
+                    <label for="phone">Telefon</label>
+                    <input id="phone" type="tel" name="phone" placeholder="555555555" autocomplete="on" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required>
+                </p>
+                <p>
+                    <label for="decade">Favorite decade</label>
+                    <input id="decade" type="number" name="decade" 
+                    min="1950" max="2020" step="10" value="1970"
+                    >
+                </p>
+                <p>
+                    <label for="coffe">Favorite coffe</label>
+                    <select name="coffe" id="coffe" multiple size="10">
+                        <optgroup label="coffe" >
+                            <option value="czarna kawa">czarna kawa</option>
+                            <option value="kawa z mlekiem">kawa z mlekiem</option>
+                        </optgroup>
+                        <optgroup label="Espresso drink">
+                            <option value="latte">latte</option>
+                            <option value="cappuccino">cappuccino</option>
+                            <option value="cortado">cortado</option>
+                            <option value="americana" selected>americana</option>
+                            <option value="other">other</option>
+                        </optgroup>
+                    </select>
+                </p>
+                <!-- <p>
+                    <label for="coffe">Favorite coffe</label>
+                    <input type="text" name="coffe" id="coffe" list="coffe-list" >
+                        <datalist id="coffe-list">
+                            <option value="czarna kawa">czarna kawa</option>
+                            <option value="kawa z mlekiem">kawa z mlekiem</option>
+                            <option value="latte">latte</option>
+                            <option value="cappuccino">cappuccino</option>
+                            <option value="cortado">cortado</option>
+                            <option value="americana">americana</option>
+                            <option value="other">other</option>
+                        </datalist>    
+                </p> -->
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>What is your favorite food</legend>
+                    <p>
+                        <input type="radio" name="food" id="tacos" value="tacos">
+                        <label for="tacos">Tacos</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="pizza" value="pizza">
+                        <label for="pizza">Pizza</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="other" value="other" >
+                        <label for="other">Other</label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Do you have pets?</legend>
+                    <p>
+                        <input type="checkbox" name="pets" id="dog" value="dog">
+                        <label for="dog">I have a dog</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="cat" value="cat">
+                        <label for="cat">I have a cat</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="fish" value="fish">
+                        <label for="fish">I have a fish</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="othersPet" value="othersPet">
+                        <label for="othersPet">I have a other pets</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Send Me a note</legend>
+                    <label for="message">Your message</label>
+                    <textarea name="message" id="message" 
+                    cols="30" rows="10" placeholder="Type your message here"></textarea>
+                </fieldset>
+                <br>
+                <button type="reset">Zresetuj</button>
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                <button type="submit">Wyślij</button>
+            </form>
+        </article>
     </main>
-    
+
     <footer>
         <hr>
         <p>&copy; <a href="about.html" title="About Dave">Dave Gray</a> &gt;&gt;&gt;</p>
